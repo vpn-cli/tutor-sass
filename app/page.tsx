@@ -4,7 +4,12 @@ import { Button } from "@/components/ui/button";
 const Page = () => {
   return (
     <div>
-      <h1 className="text-2xl underline ">Yooo!</h1>
+      <h1 className="text-2xl  ">Popular Companions</h1>
+      <section className="home-section">
+        {/* <CompanionCard/>
+        <CompanionCard/>
+        <CompanionCard/> */}
+      </section>
       <Button>Nyaa</Button>
     </div>
   );
