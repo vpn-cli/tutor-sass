@@ -22,9 +22,9 @@ const Page = () => {
           id="456"
           name="Number Wizard"
           topic="Derivatives and Calculus"
-          subject="NeuroScience"
+          subject="Mathematics"
           duration={45}
-          color="#d0g8gk"
+          color="#f0f8e6"
         />
         <CompanionCard
           id="789"
@@ -32,7 +32,7 @@ const Page = () => {
           topic="Language"
           subject="English"
           duration={45}
-          color="#e5d0df"
+          color="#FFB6C1"
         />
       </section>
 
