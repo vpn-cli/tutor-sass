@@ -3,8 +3,15 @@ import CompanionCard from "@/components/CompanionCard";
 import Cta from "@/components/CTA";
 import { Button } from "@/components/ui/button";
 import CompanionsList from "@/components/CompanionsList";
+import { recentSessions } from "../constants";
 
-const Page = () => {
+interface CompanionsListProps {
+  title: string;
+  companion?: Companion[];
+  classNames?: string;
+}
+
+const Page = ({ title, companions, classNames }: CompanionsListProps) => {
   return (
     <main>
       <h1 className="text-2xl  ">Popular Companions</h1>
@@ -37,7 +44,11 @@ const Page = () => {
       </section>
 
       <section className="home-section">
-        <CompanionsList />
+        <CompanionsList
+          title="Recently completed sessions"
+          compannions={recentSessions}
+          classNames="w-2/3 max-lg:w-full"
+        />
         <Cta />
       </section>
 
